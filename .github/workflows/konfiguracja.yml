@@ -1,8 +1,7 @@
 name: Przykladowe workflow
 
 on: 
-  push:
-    branches: [ master ]
+  [push]
 
 jobs:
   compile:
