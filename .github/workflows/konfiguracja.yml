@@ -1,1 +1,16 @@
+name: Przykladowe workflow
+
+on: 
+  push:
+    branches: [ master ]
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Konfiguracja
+      run: echo "Plik skonfigurowano poprawnie"
+    - name: Dodatkowy krok
+      run: echo "Mozna wiec isc dalej"
 
