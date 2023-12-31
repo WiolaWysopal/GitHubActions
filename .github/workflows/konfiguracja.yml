@@ -1,1 +1,12 @@
+name: Przykładowy Workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Uruchom skrypt
+      run: echo "Hello, world!"
 
