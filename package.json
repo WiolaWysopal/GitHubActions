@@ -1,0 +1,24 @@
+{
+  "name": "githubactions",
+  "version": "1.0.0",
+  "description": "GitHubActions in development process",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WiolaWysopal/GitHubActions.git"
+  },
+  "keywords": [
+    "GitHubActions",
+    "development",
+    "process"
+  ],
+  "author": "WiolaWysopal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WiolaWysopal/GitHubActions/issues"
+  },
+  "homepage": "https://github.com/WiolaWysopal/GitHubActions#readme"
+}
