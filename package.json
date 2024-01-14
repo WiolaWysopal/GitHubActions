@@ -4,7 +4,7 @@
   "description": "GitHubActions in development process",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/WiolaWysopal/GitHubActions/issues"
   },
-  "homepage": "https://github.com/WiolaWysopal/GitHubActions#readme"
+  "homepage": "https://github.com/WiolaWysopal/GitHubActions#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^23.2.0"
+  }
 }
