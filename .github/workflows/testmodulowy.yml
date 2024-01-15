@@ -10,9 +10,8 @@ jobs:
   test:
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]  # Dodane różne wersje Node.js
-        os: [ubuntu-latest, windows-latest, macos-latest]  # Dodane różne systemy operacyjne
-
+        node-version: [16.x, 18.x]
+        os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}  # Używa zmiennej matrix.os do określenia systemu operacyjnego
 
     steps:
