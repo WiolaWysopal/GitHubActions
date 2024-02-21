@@ -3,7 +3,6 @@ const dodaj = require('./dodaj')
 
 const server = http.createServer(function(request, response) {
   if (request.method == 'POST') {
-    // Nie potrzebujemy przetwarzać danych wejściowych od użytkownika
     const result = dodaj.add100();
     var resultPage = `
       <html>
@@ -14,10 +13,10 @@ const server = http.createServer(function(request, response) {
         </head>
         <body>
           <div class="container mt-5">
-            <h1 class="text-center">Wynik: ${result}</h1>
+            <h1 class="text-center">Result: ${result}</h1>
             <div class="row justify-content-center">
               <div class="col-md-4 text-center">
-                <a href="/" class="btn btn-primary">Powrót do strony głównej</a>
+                <a href="/" class="btn btn-primary">Back to main page</a>
               </div>
             </div>
           </div>
@@ -38,7 +37,7 @@ const server = http.createServer(function(request, response) {
         <body>
           <div class="container mt-5">
             <h1 class="text-center">Node.js Number Adder</h1>
-            <p class="text-center">Kliknij przycisk poniżej, aby dodać liczby od 1 do 100.</p>
+            <p class="text-center">Click the button below to add numbers from 1 to 100.</p>
             <div class="row justify-content-center">
               <div class="col-md-4 text-center">
                 <form method="post" action="http://localhost:3000">
