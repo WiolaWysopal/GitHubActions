@@ -4,8 +4,9 @@
   "description": "GitHubActions in development process",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "jest"
-  },
+  },  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WiolaWysopal/GitHubActions.git"

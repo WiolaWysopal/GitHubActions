@@ -31,7 +31,6 @@ const server = http.createServer(function(request, response) {
         <head>
         <meta charset="UTF-8">
           <title>Node.js Number Adder</title>
-          <!-- Dołączanie Bootstrap CSS -->
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         </head>
         <body>
@@ -40,7 +39,7 @@ const server = http.createServer(function(request, response) {
             <p class="text-center">Click the button below to add numbers from 1 to 100.</p>
             <div class="row justify-content-center">
               <div class="col-md-4 text-center">
-                <form method="post" action="http://localhost:3000">
+                <form method="post">
                   <input type="submit" class="btn btn-primary btn-lg" value="Add numbers from 1 to 100" />
                 </form>
               </div>
@@ -54,7 +53,9 @@ const server = http.createServer(function(request, response) {
   }
 })
 
-const port = 3000
-const host = '127.0.0.1'
-server.listen(port, host)
-console.log(`Listening at http://${host}:${port}`)
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
+  console.log(`Server is running on port localhost:${PORT}`);
+});
+
+
